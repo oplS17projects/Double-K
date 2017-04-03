@@ -57,7 +57,7 @@ Be explicit about the techiques from the class that you will use. For example:
 
 ## Architecture Diagram
 
-	![FP-Proposal](/FP-Proposal.jpg?raw=true "Architecture Diagram")
+![FP-Proposal](/FP-Proposal.jpg?raw=true "Architecture Diagram")
 	
 	
 	First, we will have to make sure everything works from the backend perspective 
