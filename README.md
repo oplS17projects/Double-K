@@ -1,4 +1,4 @@
-# Project-K
+# Double K
 
 ### Statement
 We will build a matching card game using a backend and gui.
