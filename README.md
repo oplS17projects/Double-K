@@ -1,7 +1,7 @@
 # Double K
 
 ### Statement
-We will build a card game using a backend and gui.
+We will build a matching card game using a backend and gui.
 
 ### Analysis
 We've referred to racket gui library and other gui game libraries. Will also possibly using data/collection
