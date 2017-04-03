@@ -1,57 +1,59 @@
 # Double K
 
 ### Statement
-We created a racket gui based program which finds two same cards.
+We will build a card game using a backend and gui.
 
 ### Analysis
-We've referred to racket gui library and other gui game libraries.
+We've referred to racket gui library and other gui game libraries. Will also possibly using data/collection
+or other libraries to represent the cards.
 
 Be explicit about the techiques from the class that you will use. For example:
 
 - Will you use data abstraction? How?
+
+	Yes we will be using a list, array, or vector to abstract the cards.
 - Will you use recursion? How?
+
+	We will possibly be using recursion to keep the instance of a single game running
+	until it reachs a condition where the user specifies to stop the game.
+	
 - Will you use map/filter/reduce? How? 
+
+	We would like to use map/filter/reduce to help with defining functions that
+	require procedures to be applied to each of the cards. Also, to filter out certain cards 
+	that may have been used in the deck already
+	
 - Will you use object-orientation? How?
+
+	We will be using constructor/accessor/mutators to create a representation of 
+	a card game,deck, and player's hands to encapsulate and certain objects
+	may have procedures defined within.
+	
 - Will you use functional approaches to processing your data? How?
+
+	We will use functional approaches to apply multiple procedures to each of the cards.
+	Possibly mapping a procedure to a list/array/vectors to create a proper representation of the cards.
+	
 - Will you use state-modification approaches? How? (If so, this should be encapsulated within objects. `set!` pretty much should only exist inside an object.)
+	
+	We would like to avoid state-modification in our procedures and rather 
+	build new lists/array/vectors and returning them within procedures.
+	
 - Will you build an expression evaluator, like we did in the symbolic differentatior and the metacircular evaluator?
+	
+	We will not be building an  expression evaluator.
+	
 - Will you use lazy evaluation approaches?
 
-The idea here is to identify what ideas from the class you will use in carrying out your project. 
-
-**Your project will be graded, in part, by the extent to which you adopt approaches from the course into your implementation, _and_ your discussion about this.**
-
-### External Technologies
-You are encouraged to develop a project that connects to external systems. For example, this includes systems that:
-
-- retrieve information or publish data to the web
-- generate or process sound
-- control robots or other physical systems
-- interact with databases
-
-If your project will do anything in this category (not only the things listed above!), include this section and discuss.
-
-### Data Sets or other Source Materials
-If you will be working with existing data, where will you get those data from? (Dowload from a website? Access in a database? Create in a simulation you will build? ...)
-
-How will you convert your data into a form usable for your project?  
-
-If you are pulling data from somewhere, actually go download it and look at it before writing the proposal. Explain in some detail what your plan is for accomplishing the necessary processing.
-
-If you are using some other starting materials, explain what they are. Basically: anything you plan to use that isn't code.
 
 ### Deliverable and Demonstration
-Explain exactly what you'll have at the end. What will it be able to do at the live demo?
 
-What exactly will you produce at the end of the project? A piece of software, yes, but what will it do? Here are some questions to think about (and answer depending on your application).
+	We will have a card game that is playable and will be able to be demonstrated live. 
 
-Will it run on some data, like batch mode? Will you present some analytical results of the processing? How can it be re-run on different source data?
-
-Will it be interactive? Can you show it working? This project involves a live demo, so interactivity is good.
 
 ### Evaluation of Results
-How will you know if you are successful? 
-If you include some kind of _quantitative analysis,_ that would be good.
+
+	A success would be playing with all of the features without having any errors.
 
 ## Architecture Diagram
 Upload the architecture diagram you made for your slide presentation to your repository, and include it in-line here.
