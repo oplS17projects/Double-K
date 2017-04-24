@@ -1,0 +1,1 @@
+("6.8" ("75fe07207d4e3ecb539c6119e4ecda83dc174656" . "431a218779ece756b5f5b77d858e93655af0c087") #"D:\\Windows Downloads\\opl\\cards\\card-class.rkt" (collects #"errortrace" #"errortrace-key.rkt") (collects #"racket" #"class.rkt") (collects #"racket" #"gui.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt"))

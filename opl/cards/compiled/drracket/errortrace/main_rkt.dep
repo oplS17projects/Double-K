@@ -1,0 +1,1 @@
+("6.8" ("c7d247b5695369662f481718e84bfe033c5a6635" . "a1e253f71fd7fc0c3682f50d16a909957724f05a") #"C:\\Users\\SKANNY\\Desktop\\opl\\cards\\cards.rkt" (collects #"errortrace" #"errortrace-key.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt"))
