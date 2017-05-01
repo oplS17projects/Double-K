@@ -7,6 +7,7 @@
 This matching card game helps people to improve their memory ability.
 First, user chooses 2 cards randomly. Then, if the cards are matched, those are terminated, otherwise they are flipped again.
 
+Authorship note : First of all, I(@SokannKo) created GUI based framework. Then my partner, Leon Kang(@LeonKang978) wrote the backend part. And based on that data, I filled out engine part.
 
 # Libraries Used
 The code uses three libraries:
@@ -41,6 +42,7 @@ The following code creates a main table, ```table``` which is main window table 
 ;; random card
 (random-seed (modulo (current-milliseconds) 9999))
  ```
+ 
 It defines size of the table and max value of match count.
 
 
@@ -70,4 +72,25 @@ The following code creates a deck, ```deck``` which brings card images from the 
     )
   )
  ```
+ 
 It loads 10 cards first and then uses ```map``` to duplicate each card.
+
+
+
+## 3. Setup timer
+
+The following code creates a deck, ```time-timer``` which defines cumulate time while the program processes.
+
+```
+(define time-timer
+  (make-object timer%
+    (lambda ()
+      (unless (= matches MAX-MATCHES)
+        (display-time
+         (inexact->exact
+          (floor (/ (- (current-inexact-milliseconds) start-time) 1000))))
+        (send time-timer start (get-update-delta) #t)))))
+ ```
+ 
+Since ```current-inexact-milliseconds``` returns the current time in milliseconds, its number needs to be changed.
+And it sends to ```get-update-delta``` to figure out how many milliseconds to sleep before the next update.
